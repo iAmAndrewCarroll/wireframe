@@ -1,0 +1,63 @@
+<style>
+    head {
+        background-color: #e3dace;
+    }
+    header {
+        text-align: center;
+        height: 250px;
+        background-color: #e3dace;
+        color: #142632;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+        body {
+            background-color: #e3dace;
+            color:#142632;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h1 {
+            background-color: #e3dace;
+            color:#142632;
+            padding-left: 100px;
+        }
+        p {
+            background-color: #e3dace;
+            color:#142632;
+        }
+        div {
+            background-color: #e3dace;
+            color:#142632;
+        }
+        section {
+            background-color: #e3dace;
+            color:#142632
+        }
+        .card {
+            box-shadow: 0 4px 8px 0 #a2aabo;
+            padding: 16px;
+            text-align: center;
+            background-color: 
+            border-radius: 25px;
+        }
+        img {
+            border-radius: 25px 25px 25px 25px;
+        }
+    
+    * {
+        box-sizing: border-box;
+    }
+    .column {
+        float: left;
+        width: 30%;
+        padding: 0 10px;
+    }
+    .row {
+        margin: 0 -5px;
+        vertical-align: middle
+    }
+    footer {
+        background-color: #e3dace;
+        color:#142632 
+        text-align: center;
+    }
+        
+</style>
