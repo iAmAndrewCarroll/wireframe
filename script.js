@@ -51,11 +51,15 @@ function getUsername(){
     mydiv.innerHTML="You are so loved Sweet Sister!"
     } else if (userName == 'Kassie'){
     mydiv.innerHTML="You are doing such a great job!"
+    } else if (userName == 'Mom'){
+    mydiv.innerHTML="I love and miss you so much!"
+    } else if (userName == 'Luann'){
+    mydiv.innerHTML="If you are Andrew's Mom he wants you to know that he loves and misses you!!!!"
     }
     else {
     mydiv.innerHTML="They are definitely watching you...";
     // mydiv.innerHTML=userName;
-    }
+    } 
 } 
 getUsername()
 
