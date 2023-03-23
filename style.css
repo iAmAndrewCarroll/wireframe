@@ -1,6 +1,8 @@
 <style>
     head {
         background-color: #e3dace;
+        align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
     }
     header {
         text-align: center;
@@ -17,7 +19,6 @@
         h1 {
             background-color: #e3dace;
             color:#142632;
-            padding-left: 100px;
         }
         p {
             background-color: #e3dace;
@@ -35,29 +36,50 @@
             box-shadow: 0 4px 8px 0 #a2aabo;
             padding: 16px;
             text-align: center;
-            background-color: 
+            background-color: #4c586f;
             border-radius: 25px;
+            height: 1000px;
         }
         img {
             border-radius: 25px 25px 25px 25px;
         }
-    
     * {
         box-sizing: border-box;
     }
     .column {
         float: left;
-        width: 30%;
+        width: 100%;
         padding: 0 10px;
     }
     .row {
-        margin: 0 -5px;
-        vertical-align: middle
+        /* margin: 0 -5px; */
+        /* vertical-align: middle; */
+        /* margin: 0 auto; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     footer {
         background-color: #e3dace;
         color:#142632 
         text-align: center;
     }
-        
+    .button {
+        padding: 10px 20px;
+        background-color: #142632;
+        color: #62abbd;
+        display: inline-block;
+        margin: 10px;
+        border-radius: 10px;
+        text-decoration: none;
+    }
+    .cards {
+        margin: 0 auto;
+    }
+    .vid {
+        padding-bottom: 20px;
+    }
+    .link {
+        font-weight: bold;
+    }
 </style>
