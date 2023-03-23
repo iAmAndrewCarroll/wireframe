@@ -42,7 +42,7 @@ function getUsername(){
     console.log(userName);
     mydiv.innerHTML=userName;
     if (userName == 'iAmAndrewCarroll'){
-    mydiv.innerHTML=userName + ", hello my Savage Poet";
+    mydiv.innerHTML="Hello my Savage Poet";
     } else if (userName === 'Justin'){
     mydiv.innerHTML=userName + ", you probably aren't being followed";
     } else if (userName == 'Kjell'){
