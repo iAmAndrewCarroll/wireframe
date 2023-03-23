@@ -69,6 +69,16 @@ if (confirm("Did you know that you are doing amazing things?")) {
 }
 getAffirmation()
 
+function getCast(){
+    let mydiv=document.getElementById("cast")
+if (confirm("Close your eyes, take a deep breath into the belly, and set a deep intention for today.")) {
+    mydiv.innerHTML=("This is the beginning skillset for engaging in word magic.");
+} else {
+    mydiv.innerHTML=("That's okay.  The teacher appears when the student is ready.");
+}
+}
+getCast()
+
 // conditional logic basic structure
 // if (if this is true){execute the code in these brackets}
 // if (){
