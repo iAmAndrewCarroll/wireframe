@@ -65,7 +65,7 @@ getUsername()
 
 function getAffirmation(){
     let mydiv=document.getElementById("affirmation")
-if (confirm("Did you know that you are doing amazing things?")) {
+if (window.confirm("Did you know that you are doing amazing things?")) {
     mydiv.innerHTML=("Take a moment and breathe in that feeling of well-being.");
 } else {
     mydiv.innerHTML=("You are. Give yourself a moment to appreciate all the hard work you do.");
@@ -76,12 +76,34 @@ getAffirmation()
 function getCast(){
     let mydiv=document.getElementById("cast")
 if (confirm("Close your eyes, take a deep breath into the belly, and set a deep intention for today.")) {
-    mydiv.innerHTML=("This is the beginning skillset for engaging in word magic.");
+    mydiv.innerHTML=("Setting deep intentions is the foundation for engaging in word magic.");
 } else {
     mydiv.innerHTML=("That's okay.  The teacher appears when the student is ready.");
 }
 }
 getCast()
+
+function getBless(){
+    let answer = prompt("On a scale of 1 - 10 how blessed do you feel?")
+        let mydiv = document.getElementById("bless")
+while (answer < 7) {
+    answer = prompt("I'm sure there is something you can give gratitude for right now...what can you do right now, in this moment, to increase your blessings?! Now how are you doing on that scale?")
+} 
+if (answer >= 7) {
+    mydiv.innerHTML = ("Wow, that's amazing! You must practice gratitude!");    
+}
+}
+getBless()
+
+function getRate() {
+    let answer = prompt("How many blessings do you wanna see?");
+        let mydiv = document.getElementById("rate")
+    for (let i = 0; i < rate; i++) {
+      document.write("<p class='tux-tags'>TUX WUZ HERE</p>");
+    }
+  }
+  getRate()
+
 
 // conditional logic basic structure
 // if (if this is true){execute the code in these brackets}
