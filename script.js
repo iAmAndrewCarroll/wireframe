@@ -95,7 +95,7 @@ if (answer >= 7) {
 }
 getBless()
 
-function getRate() {
+function getRate(){
     let rate = +prompt("How many blessings do you want to receive?");
         let mydiv = document.getElementById("rate")
         console.log(rate)
