@@ -40,7 +40,7 @@ function getUsername(){
     let mydiv=document.getElementById("divine")
     let userName = prompt("What is your government name?"); 
     console.log(userName);
-    mydiv.innerHTML=userName;
+    mydiv.innerHTML = userName;
     if (userName == 'iAmAndrewCarroll'){
     mydiv.innerHTML="Hello my Savage Poet";
     } else if (userName === 'Justin'){
@@ -96,10 +96,16 @@ if (answer >= 7) {
 getBless()
 
 function getRate() {
-    let answer = prompt("How many blessings do you wanna see?");
+    let rate = +prompt("How many blessings do you want to receive?");
         let mydiv = document.getElementById("rate")
+        console.log(rate)
     for (let i = 0; i < rate; i++) {
-      document.write("<p class='tux-tags'>TUX WUZ HERE</p>");
+            if (i === 3) {
+                break
+            }
+        let li = document.createElement("li")
+      li.innerHTML = "<img src='./pics/favicon.png' alt='yeah baby' width='5%'></img>";
+      mydiv.appendChild(li);
     }
   }
   getRate()
