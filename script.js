@@ -55,7 +55,13 @@ function getUsername(){
     mydiv.innerHTML="I love and miss you so much!"
     } else if (userName == 'Luann'){
     mydiv.innerHTML="If you are Andrew's Mom he wants you to know that he loves and misses you!!!!"
-    }
+    } else if (userName == 'Oma'){
+    mydiv.innerHTML="Andrew loves and misses you!!!!"
+    } else if (userName == 'Carla'){
+    mydiv.innerHTML="If you are Andrew's Oma he wants you to know that he loves and misses you!!!!"
+    } else if (userName == 'Shirley'){
+        mydiv.innerHTML="Shirley, I have very deep and meaningful feelings, respect, and adoration for you, Love.  I'm so proud of everything you have accomplished and the strength you exhibit in your life.  Thank you for your honesty and willingness to engage with me as we grow together in healthy ways.  You are so incredible, Shirley Love."
+    } 
     else {
     mydiv.innerHTML="They are definitely watching you...";
     // mydiv.innerHTML=userName;
@@ -96,16 +102,22 @@ if (answer >= 7) {
 getBless()
 
 function getRate(){
-    let rate = +prompt("How many blessings do you want to receive?");
+    let rate = parseInt(prompt("Enter a number between 1 & 3 to receive your blessings?"));
         let mydiv = document.getElementById("rate")
         console.log(rate)
-    for (let i = 0; i < rate; i++) {
-            if (i === 3) {
-                break
-            }
-        let li = document.createElement("li")
-      li.innerHTML = "<img src='./pics/favicon.png' alt='yeah baby' width='5%'></img>";
-      mydiv.appendChild(li);
+    if (rate > 3) {
+        alert("Don't get greedy...I said a maximum of 3 blessings, chump.")
+            getRate()
+    }
+    else {
+        for (let i = 0; i < rate; i++) {
+                // if (i === 3) {
+                //     break This is commented out because it is made redundant by the if check on line 102
+                // } 
+            let li = document.createElement("li")
+        li.innerHTML = "<img src='./pics/favicon.png' alt='yeah baby' width='5%'></img>";
+        mydiv.appendChild(li);
+        }
     }
   }
   getRate()
