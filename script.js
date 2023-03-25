@@ -61,8 +61,9 @@ function getUsername(){
     mydiv.innerHTML="If you are Andrew's Oma he wants you to know that he loves and misses you!!!!"
     } else if (userName == 'Shirley'){
         mydiv.innerHTML="Shirley, I have very deep and meaningful feelings, respect, and adoration for you, Love.  I'm so proud of everything you have accomplished and the strength you exhibit in your life.  Thank you for your honesty and willingness to engage with me as we grow together in healthy ways.  You are so incredible, Shirley Love."
-    } 
-    else {
+    } else if (userName == 'Carren'){
+        mydiv.innerHTML="Hi Staci!  You are so awesome and make such an impact on people.  Your kindness will ring always and forever as ripples on the pond of life.  Thank you for showing me a different way. Love always dear friend, Andrew."
+    } else {
     mydiv.innerHTML="They are definitely watching you...";
     // mydiv.innerHTML=userName;
     } 
